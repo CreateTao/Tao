@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="所有工作"
+            android:textSize="17sp"
+            android:textColor="#ff6d04"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/tv_workAllType"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="工资范围"
+            android:textSize="17sp"
+            android:textColor="#ff6d04"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:id="@+id/tv_workMoneyType"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/space_backgroup">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_workAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

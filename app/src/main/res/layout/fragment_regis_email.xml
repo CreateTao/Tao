@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:text="邮箱"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"/>
+
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:hint="请输入邮箱"
+                android:inputType="textEmailAddress"
+                android:id="@+id/et_register_email"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/space_backgroup"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:text="密码"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"/>
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:maxLength="12"
+                android:hint="小于12个字符"
+                android:inputType="numberPassword"
+                android:id="@+id/et_register_namePassword"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/space_backgroup"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="15dp"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="注 册"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:id="@+id/btn_nameRegister"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/btn_backgrounp" />
+    </LinearLayout>
+
+</LinearLayout>

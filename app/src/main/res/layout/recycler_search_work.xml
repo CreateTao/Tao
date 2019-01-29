@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="15dp"
+    android:id="@+id/lin_recyHomeWork"
+    android:background="@drawable/lin_back">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:maxLines="1"
+            android:textSize="22sp"
+            android:ellipsize="end"
+            android:id="@+id/tv_recyHomeWorkTitle"/>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#ff00"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/tv_recyHomeWorkTime"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_recyHomeWorkNumber"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tv_recyHomeWorkType"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="20/人"
+            android:textSize="19sp"
+            android:textColor="#ff00"
+            android:gravity="center"
+            android:id="@+id/tv_recyHomeWorkMoney"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.xwy.tao_work.mytaowork.widget.MyCircleImageView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/default_head"
+                android:id="@+id/iv_recyHomeWorkHead"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent"
+                android:text="阿达都是"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:id="@+id/tv_recyHomeWorkName"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

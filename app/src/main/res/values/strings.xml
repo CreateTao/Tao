@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My TaoWork</string>
+
+    <string name="forget_text">
+                        输入邮箱点击完成后，会向所输入邮箱发送一条邮件，
+                        请在邮件所给的链接中修改密码，感谢配合！</string>
+
+    <string name="introduce_porject">
+            此平台是一款基于电脑工具的兼职平台，以电脑工作为基本兼职任务
+        ，兼职人员不仅可以在此平台上赚到一些钱，也可以通过此平台提供
+        的一些学习资料来提升自己的技能，以能够进行更多的兼职任务。这
+        将可以作为免费学习平台供你们使用。
+            也欢迎大家能够加入我们的团队！
+    </string>
+</resources>

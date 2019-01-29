@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/popup_menu_All"
+        android:orderInCategory="0"
+        android:title="全部"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/popup_menu_office"
+        android:orderInCategory="1"
+        android:title="办公应用"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/popup_menu_Word"
+                android:orderInCategory="10"
+                android:title="Work编写"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/popup_menu_PPT"
+                android:orderInCategory="11"
+                android:title="PPT设计"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/popup_menu_Excel"
+                android:orderInCategory="12"
+                android:title="Excel数据处理"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/popup_menu_Officeother"
+                android:orderInCategory="13"
+                android:title="其他"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/popup_menu_mult"
+        android:orderInCategory="2"
+        android:title="多媒体设计"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/popup_menu_picture"
+                android:orderInCategory="20"
+                android:title="图片设计"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/popup_menu_video"
+                android:orderInCategory="21"
+                android:title="视频处理"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/popup_menu_music"
+                android:orderInCategory="22"
+                android:title="音频剪辑"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/popup_menu_3D"
+                android:orderInCategory="23"
+                android:title="3D渲染"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/popup_menu_product"
+        android:orderInCategory="3"
+        android:title="产品开发"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/popup_menu_phone"
+                android:orderInCategory="30"
+                android:title="移动应用开发"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/popup_menu_web"
+                android:orderInCategory="31"
+                android:title="网页开发"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/popup_menu_wx"
+                android:orderInCategory="32"
+                android:title="微信小程序开发"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/popup_menu_productMore"
+                android:orderInCategory="33"
+                android:title="更多"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/popup_menu_More"
+        android:orderInCategory="4"
+        android:title="其他"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/popup_menu_typeWrite"
+                android:orderInCategory="40"
+                android:title="打字"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/popup_menu_app"
+                android:orderInCategory="41"
+                android:title="App用户注册"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/popup_menu_taoB"
+                android:orderInCategory="42"
+                android:title="淘宝优惠券体验"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/popup_menu_moreOther"
+                android:orderInCategory="43"
+                android:title="更多"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

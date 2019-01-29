@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:id="@+id/tl_alterHead"
+        app:navigationIcon="@drawable/tool_back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="个人资料"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:layout_marginLeft="10dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/rl_alterAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="65dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="头像"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+
+        <com.xwy.tao_work.mytaowork.widget.MyCircleImageView
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_head"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:id="@+id/iv_alterAvatar"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/space_backgroup"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="11dp" />
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="19sp"
+                android:textColor="@color/btn_backgrounp"
+                android:background="@color/white"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="45dp"
+                android:id="@+id/et_alterUserName"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/space_backgroup" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/rl_alterUserSex">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="11dp" />
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/right_icon"
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_recyAlterRight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/iv_recyAlterRight"
+                android:text="男"
+                android:textSize="19sp"
+                android:textColor="@color/btn_backgrounp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/tv_alterUseSex"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/space_backgroup" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年龄"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="11dp" />
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:inputType="number"
+                android:textSize="19sp"
+                android:textColor="@color/btn_backgrounp"
+                android:background="@color/white"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="45dp"
+                android:id="@+id/et_alterUserAge"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/space_backgroup" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/rl_alterUserPass">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="11dp" />
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/right_icon"
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_recyAlterRight1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/iv_recyAlterRight1"
+                android:text="修改"
+                android:textSize="19sp"
+                android:textColor="@color/btn_backgrounp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="20dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="完成"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:id="@+id/btn_alterSuccess"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/btn_backgrounp" />
+
+</LinearLayout>

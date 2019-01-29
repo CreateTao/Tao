@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#b4ffbf00</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="tab_text_normal">#000000</color>
+    <color name="tab_text_pressed">#fb4700</color>
+
+    <color name="edit_normal">#5a5757</color>
+    <color name="edit_pressed">#b4ffbf00</color>
+
+    <color name="btn_normal">#feae5e</color>
+    <color name="btn_pressed">#efb67e</color>
+
+    <color name="btn_backgrounp">#feae5e</color>
+    <color name="white">#ffffff</color>
+
+    <color name="space_backgroup">#e2dede</color>
+    <color name="black">#383131</color>
+
+    <color name="space_background_home">#ffe9e9</color>
+
+    <color name="base_bg">#f4f6f6</color>
+    <color name="msg_chat_bg">#eceff4</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="blue">#0099ff</color>
+    <color name="red">#ff0000</color>
+</resources>

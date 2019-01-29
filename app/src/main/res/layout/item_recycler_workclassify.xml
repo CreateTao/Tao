@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lin_workclassify">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/tv_workclassify"
+            android:id="@+id/tv_workclassify"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                style="@style/tv_classify_work1"
+                android:id="@+id/tv_classify1"
+                />
+
+            <TextView
+                style="@style/tv_classify_work2"
+                android:id="@+id/tv_classify2" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/tv_classify_work3"
+            android:id="@+id/tv_classify3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/iv_workclassify"
+            android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
